@@ -5,7 +5,46 @@
 		<title>Children Inspired Template</title>
 		<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+		<link rel="stylesheet" type="text/css" href="css/slider.css" />
 		<link href='http://fonts.googleapis.com/css?family=Crafty+Girls|Grand+Hotel' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Henny+Penny|Coming+Soon|Rock+Salt|Chango|Knewave|Gochi+Hand|Anton|Nothing+You+Could+Do|Rammetto+One|Devonshire|Allan|Delius+Unicase' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+		<script src="js/slides.min.jquery.js"></script>
+		<script>
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				play: 4000,
+				pause: 2500,
+				hoverPause: true,
+				animationStart: function(current){
+					$('.caption').animate({
+						bottom:-35
+					},100);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationStart on slide: ', current);
+					};
+				},
+				animationComplete: function(current){
+					$('.caption').animate({
+						bottom:0
+					},200);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationComplete on slide: ', current);
+					};
+				},
+				slidesLoaded: function() {
+					$('.caption').animate({
+						bottom:0
+					},200);
+				}
+			});
+		});
+	</script>
+		
 		<!--------<link rel="stylesheet" type="text/css" href="twitter.css" />
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript"></script>
 		<script src="twitter.js"></script>-------->
@@ -24,12 +63,56 @@
 			</hgroup>	
 		</header>
 		<section id="middle" class="body">
+		<div id="top" class="top">
+			<!--------[ sliderjs used under APACHE license]-------->
+				<!--------[read sliderjs-README file for license details]-------->
+				<!--------[copyright 2012 http://nathansearles.com. All rights reserved]-------->
+				<div id="slides">
+				<div class="slides_container">
+					<div class="slide">
+						<a href="http://www.flickr.com/photos/jliba/4665625073/" title="go team venture" target="_blank"><img src="img/children.jpg"  alt="Slide 1"></a>
+						<div class="caption" style="bottom:0">
+							<p>Tons of books for children!</p>
+						</div>
+					</div>
+					<div class="slide">
+						<a href="http://www.flickr.com/photos/stephangeyer/3020487807/" title="go team venture" target="_blank"><img src="img/child_learn.jpg"  alt="Slide 2"></a>
+						<div class="caption">
+							<p>Where children come to learn!</p>
+						</div>
+					</div>
+					<div class="slide">
+						<a href="http://www.flickr.com/photos/childofwar/2984345060/" title="go team venture" target="_blank"><img src="img/kids.jpg"  alt="Slide 3"></a>
+						<div class="caption">
+							<p>It's not just learning.</p>
+						</div>
+					</div>
+					<div class="slide">
+						<a href="http://www.flickr.com/photos/b-tal/117037943/" title="go team venture" target="_blank"><img src="img/kids-playing.jpg"  alt="Slide 4"></a>
+						<div class="caption">
+							<p>It's the experience!</p>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="prev"><img src="img/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
+				<a href="#" class="next"><img src="img/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>
+			</div>
+			</div>
 			<div id="left" class="left-column">
-			<h2>Welcome to children's Playground</h2>
-			<img src="img/cartoon.jpg" class="thumb"/><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a tincidunt ipsum. Maecenas fermentum ipsum nec ligula volutpat accumsan. Integer scelerisque mauris in quam lobortis aliquet. In aliquam sapien sed diam ornare sit amet porttitor dui gravida. Nullam elit purus, tincidunt sagittis mattis ac, euismod ut est. Suspendisse accumsan placerat lacus, volutpat suscipit diam vestibulum ac. Duis vehicula, nulla non iaculis mattis, lorem tellus feugiat nibh, quis porta libero arcu eget lacus. Duis ut felis leo, a egestas risus. Donec nisi tortor, consectetur vitae ornare mollis, pulvinar dapibus quam. Nam interdum eros non ligula dapibus eleifend. Suspendisse potenti. Maecenas id viverra velit. Duis odio nibh, malesuada vitae gravida a, dapibus a tortor. </p>
+			<article class="grades" >
+				<h1>Choose your grade</h1>
+					<ul>
+						<li><a href="#" target="_blank">Pre-K</a></li>
+						<li><a href="#" target="_blank">K</a></li>
+						<li><a href="#" target="_blank">1-5</a></li>
+						<li><a href="#" target="_blank">6-8</a></li>
+					</ul>
+			</article>
+			<article class="bio">
+			<h2>About Us</h2>
+			<img src="img/cartoon.jpg" alt="cartoon" class="thumb2"  /><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a tincidunt ipsum. Maecenas fermentum ipsum nec ligula volutpat accumsan. Integer scelerisque mauris in quam lobortis aliquet. In aliquam sapien sed diam ornare sit amet porttitor dui gravida. Nullam elit purus, tincidunt sagittis mattis ac, euismod ut est. Suspendisse accumsan placerat lacus, volutpat suscipit diam vestibulum ac. Duis vehicula, nulla non iaculis mattis, lorem tellus feugiat nibh, quis porta libero arcu eget lacus. Duis ut felis leo, a egestas risus. Donec nisi tortor, consectetur vitae ornare mollis, pulvinar dapibus quam. Nam interdum eros non ligula dapibus eleifend. Suspendisse potenti. Maecenas id viverra velit. Duis odio nibh, malesuada vitae gravida a, dapibus a tortor. </p>
 			<p>Suspendisse eros tellus, sodales sit amet bibendum eu, vestibulum eget urna. Vivamus lacinia sodales risus nec pulvinar. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas vel enim leo. Vestibulum ornare semper velit, at dapibus nulla convallis ac. Donec vel nibh condimentum velit posuere facilisis. Praesent lacus erat, elementum vitae tempor eget, ultrices eget magna. Sed volutpat odio molestie nisl fermentum vel posuere erat dapibus. Curabitur sagittis placerat dolor, et venenatis urna mattis ac. </p>
-			
-		
+			</article>
 			</div>
 			<div id="right" class="right-column">
 			
@@ -40,8 +123,14 @@
 			<textarea class="fillout"></textarea>
 			<label for="email">Email :</label>
 			<textarea class="fillout"></textarea>
+			<input type="submit" value="Send" />
 			</form>
-			<h2>Book Reviews</h2>
+			<h2>Latest Games</h2>
+			<ul>
+				<li><img src="img/water.jpg" class="thumb" alt="puzzle img" /><p>Underwater Adventure 3</p></li>
+				<li><img src="img/maze.jpg" class="thumb" alt="puzzle img" /><p>Diamond Maze</p></li>
+			</ul>	
+			<h2>Latest Books</h2>
 				<script language="JavaScript" src="http://itde.vccs.edu/rss2js/feed2js.php?src=http%3A%2F%2Ftopics.nytimes.com%2Ftopics%2Freference%2Ftimestopics%2Fsubjects%2Fc%2Fchildrens_books%2Findex.html%3Frss%3D1&chan=n&num=3&desc=0&date=n&targ=y" type="text/javascript"></script>
 				<noscript><a href="http://itde.vccs.edu/rss2js/feed2js.php?src=http%3A%2F%2Ftopics.nytimes.com%2Ftopics%2Freference%2Ftimestopics%2Fsubjects%2Fc%2Fchildrens_books%2Findex.html%3Frss%3D1&chan=n&num=3&desc=0&date=n&targ=y&html=y">View RSS feed</a></noscript>
 			</div>

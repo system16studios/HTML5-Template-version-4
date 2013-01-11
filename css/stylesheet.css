@@ -11,12 +11,21 @@
 	border: 0px solid white;
 	}
 .thumb {
-width: 200px;
-margin: 5px;
-padding: 2px;
-position: relative;
-float: left;
-}	
+	width: 50px;
+	margin: 5px;
+	padding: 2px;
+	position: relative;
+	float: left;
+	border: 3px solid #9142AD;
+	}
+.thumb2 {
+	width: 150px;
+	margin: 5px 10px 5px 5px;
+	padding: 2px;
+	position: relative;
+	float: left;
+	border: 3px solid transparent;
+	}	
 /*--------[END GLOBAL]--------*/	
 /*--------Top header and navigation bar--------*/
 #topHeader {
@@ -72,56 +81,87 @@ float: left;
 	width: 65%;
 	position: relative;
 	float: left;
-	background: #fff;
+	background: none;
 	margin: 1px 5px 5px 5px;
-	border: 0px solid red;
-	border-radius: 10px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	box-shadow: 0px 2px 2px rgba(2,2,2,0.6);
 	}	
 	#left p {
-	font-family: comic, cursive, serif, arial;
-	padding: 3px 10px;
-	font-weight: 100;
-	font-size: 15px;
-	}
-	
-	#left h2, #right h2{
-	font-family:  cursive;
-	padding: 2px 10px;
-	color: #D11C49;
-	text-shadow: 1px 2px 5px rgba(150,100,255,0.9);
+		font-family: 'Coming Soon', cursive;
+		padding: 3px 10px;
+		font-weight: 500;
+		font-size: 15px;
 		}
-#left ul , #right ul{
-	margin-left: -19px;
-	}
-	#left ul li, #right ul li{
-	width: 95%;
-	list-style: none;
-	height: auto;
-	position: relative;
-	font-family: arial, helvetica, serif;
-	font-size: 12px;
-	padding: 5px;
-	line-height: 20px;
-	border-bottom: 1px solid gray;
-	margin-bottom: 5px;
-	margin-left: 0px;
-	background: #fff;
-	color: #000;
-	clear: both;
+	#left h2, #right h2{
+		font-family:  cursive;
+		padding: 2px 10px;
+		color: #D11C49;
+		text-shadow: 1px 2px 5px rgba(150,100,255,0.9);
+		}
+.grades{
+	background: #0C6FAE url(../img/grades.jpg) center center fixed;
+	width: 97%;
+	margin: auto;
+	border-radius: 7px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
 	overflow: hidden;
+	box-shadow: 0px 2px 2px rgba(2,2,2,0.6);
 	}	
-	#left ul li a, #right ul li a {
-	font-weight: bold;
-	font-size: 13px;
-	background: none;
-	text-decoration: none;
-	padding: 7px;
-	margin-bottom: 5px;
-	color: #9142AD;
+	.grades ul{
+	margin-left: 10px;
+	padding: 0;
 	}
+	.grades h1 {
+	font-family: 'Henny Penny', cursive;
+		color: #fff;
+		font-size: 34pt;
+		text-align: center;
+		line-height: 35pt;
+		height: 13pt;
+		}
+	.grades ul li{
+		list-style-type: none;
+		width: 100px;
+		height: 75px;
+		margin: 10px 5px;
+		float: left;
+		position: relative;
+		border: 5px solid #2CDEFC;
+		border-radius: 23px;
+		-moz-border-radius: 23px;
+		-webkit-border-radius: 23px;
+		background: #B1F8BE;
+		text-align: center;
+		line-height: 70px;
+		overflow: hidden;
+		box-shadow: 0px 2px 2px rgba(2,2,2,0.6);
+		}
+		.grades ul li:hover {
+			background: #81BE42;
+			border-color: #3E9A00;
+			}
+	.grades ul li a {
+		font-family: 'Gochi Hand', cursive;
+		text-decoration: none;
+		font-weight: bold;
+		color: #E8383D;
+		font-size: 33px;
+		padding: 5px 10px;
+		text-shadow: 2px 2px 2px rgba(2,2,2,0.6);
+		text-shadow: 0px 4px -4px rgba(1,1,1,0.6);
+		}
+.bio {
+	background: #fff;
+	width: 97%;
+	margin: 15px auto;
+	border-radius: 7px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	overflow: hidden;
+	box-shadow: 0px 2px 2px rgba(2,2,2,0.6);
+	}
+	.bio p {
+		font-family: 'Coming Soon', cursive;
+		}
 /*right side div*/	
 #right{
 	width: 33%;
@@ -130,60 +170,116 @@ float: left;
 	overflow: hidden;
 	}
 	#right h2{
-	font-family: "Grand Hotel", serif, arial;
-	color: #fff;
-	padding: 0px;
-	font-size: 25pt;
-	height: 17px;
-	text-align: center;
-	font-weight: 500;
-	text-indent: 10px;
-	}
+		font-family: "Grand Hotel", serif, arial;
+		color: #fff;
+		padding: 0px;
+		font-size: 25pt;
+		height: 10px;
+		text-align: center;
+		font-weight: 500;
+		text-indent: 10px;
+		margin-top: 0px;
+		}
 	#right form{
-	overflow: hidden;
-	background: #9142AD;
-	height: auto;
-	padding: 5px 0px;
-	margin: auto;
-	margin-bottom: 20px;
-	border: 4px solid #fff;
-	border-radius: 10px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	box-shadow: 0px 2px 2px rgba(2,2,2,0.6);
-	}
+		overflow: hidden;
+		background: #9142AD;
+		height: auto;
+		padding: 5px 0px;
+		margin: auto;
+		margin-bottom: 20px;
+		border: 4px solid #fff;
+		border-radius: 10px;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+		box-shadow: 0px 2px 2px rgba(2,2,2,0.6);
+		}
 	#right form p{
-	width: 85%;
-	color: #fff;
-	text-align: center;
-	margin: auto;
-	font-family: "Crafty Girls", serif, arial;
-	margin-bottom: 20px;
-	}
+		width: 85%;
+		color: #fff;
+		text-align: center;
+		margin: auto;
+		font-family: "Crafty Girls", serif, arial;
+		margin-bottom: 20px;
+		}
 	#right form label {
-	float: left;
-	width: 50px;
-	height: 35px;
-	line-height: 25px;
-	padding: 2px 5px 5px 10px;
-	clear: both;
-	color: #fff;
-	font-weight: 500;
-	font-family: arial, serif, helvetica;=
-	}
+		float: left;
+		width: 50px;
+		height: 35px;
+		line-height: 25px;
+		padding: 2px 5px 5px 10px;
+		clear: both;
+		color: #fff;
+		font-weight: 500;
+		font-family: arial, serif, helvetica;=
+		}
 	.fillout {
-	height: 15px;
-	padding: 5px;
-	float: right;
-	margin-right: 5px;
-	background: #fff;
-	color: #000;
-	font-family: "Oswald", helvetica, serif, arial;
-	box-shadow: 0px 2px 2px rgba(2,2,12,0.6);
-	border-radius: 7px;
-	-moz-border-radius: 7px;
-	-webkit-border-radius: 7px;
-	}
+		height: 15px;
+		padding: 5px;
+		float: right;
+		margin-right: 5px;
+		background: #fff;
+		color: #000;
+		font-family: "Oswald", helvetica, serif, arial;
+		box-shadow: 0px 2px 2px rgba(2,2,12,0.6);
+		border-radius: 7px;
+		-moz-border-radius: 7px;
+		-webkit-border-radius: 7px;
+		}
+	#right input[type=submit] {
+		width: 80px;
+		line-height: 25px;
+		height: 35px;
+		border: 2px solid #fff;
+		float: right;
+		padding: 1px 15px;
+		margin: 10px;
+		cursor: pointer;
+		border-radius: 7px;
+		-moz-birder-radius: 7px;
+		-webkit-border-radius: 7px;
+		font-family: "Oswald", helvetica, serif, arial;
+		text-transform: uppercase;
+		background: #2CDEFC;
+		color: #fff;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#81BE42', endColorstr='#087602'); /* for IE */
+		background: -webkit-gradient(linear, left top, left bottom, from(#81BE42), to(#087602)); /* for webkit 	browsers */
+		background: -moz-linear-gradient(top,  #81BE42,  #087602);/* for firefox */
+		box-shadow: 0px 2px 2px rgba(2,2,2,0.6);
+		}
+	#right input[type=submit]:hover {
+		cursor: pointer;
+		background: #bbb;
+		color: #000;
+		}
+	#right ul{
+		margin-left: -29px;
+		}
+	#right ul li{
+		width: 95%;
+		list-style: none;
+		height: auto;
+		position: relative;
+		font-family: arial, helvetica, serif;
+		font-size: 12px;
+		padding: 5px;
+		line-height: 20px;
+		border-bottom: 1px solid gray;
+		margin-bottom: 5px;
+		margin-left: 0px;
+		background: #fff;
+		color: #000;
+		clear: both;
+		overflow: hidden;
+		}	
+	#right ul li a {
+		font-weight: bold;
+		font-size: 13px;
+		background: none;
+		text-decoration: none;
+		padding: 7px;
+		margin-bottom: 5px;
+		color: #9142AD;
+		}
 	
 /*--------[END middle]--------*/
 /*--------[Bottom section]--------*/
