@@ -26,6 +26,19 @@
 	float: left;
 	border: 3px solid transparent;
 	}	
+.thumb3 {
+	width: 45px;
+	margin: 5px;
+	padding: 2px;
+	position: relative;
+	float: left;
+	border: none;
+	opacity: 1.0;
+	box-shadow: -2px 2px 2px rgba(2,2,2,0.6);
+	border-radius: 7px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	}	
 /*--------[END GLOBAL]--------*/	
 /*--------Top header and navigation bar--------*/
 #topHeader {
@@ -36,7 +49,7 @@
 	}
 	#topHeader nav{
 		position: top fixed;
-		background: #E8383D;
+		background: red;
 		padding: 10px;
 		float: right;
 		clear: both;
@@ -50,7 +63,7 @@
 	#topHeader nav a{
 		font-family: "Comic Sans", arial, comic;
 		text-decoration: none;
-		color: #C4E055;
+		color: #fff;
 		font-size: 16px;
 		font-weight: 900;
 		padding: 3px 20px;
@@ -152,7 +165,7 @@
 .bio {
 	background: #fff;
 	width: 97%;
-	margin: 15px auto;
+	margin: 15px auto 0px;
 	border-radius: 7px;
 	-moz-border-radius: 7px;
 	-webkit-border-radius: 7px;
@@ -182,7 +195,7 @@
 		}
 	#right form{
 		overflow: hidden;
-		background: #9142AD;
+		background: #FBCB0D;
 		height: auto;
 		padding: 5px 0px;
 		margin: auto;
@@ -195,10 +208,11 @@
 		}
 	#right form p{
 		width: 85%;
-		color: #fff;
+		color: #460501;
 		text-align: center;
+		font-weight: bold;
 		margin: auto;
-		font-family: "Crafty Girls", serif, arial;
+		font-family: 'Coming Soon', cursive;
 		margin-bottom: 20px;
 		}
 	#right form label {
@@ -208,7 +222,7 @@
 		line-height: 25px;
 		padding: 2px 5px 5px 10px;
 		clear: both;
-		color: #fff;
+		color: #460501;
 		font-weight: 500;
 		font-family: arial, serif, helvetica;=
 		}
@@ -283,8 +297,21 @@
 	
 /*--------[END middle]--------*/
 /*--------[Bottom section]--------*/
-
-
+#icons{
+	background: none;
+	width: 93%;
+	margin: 15px 10px;
+	border-radius: 7px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	overflow: hidden;
+	padding: 10px 3px;
+	}
+#icons nav{
+	padding: 5px 2px;
+	margin-left:5px;
+	margin-bottom: 10px;
+	}
 
 /*--------[END bottom]--------*/
 /*--------[footer section]--------*/
